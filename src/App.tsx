@@ -34,7 +34,7 @@ function App() {
       />
 
       <Home setSelectedPage={setSelectedPage} />
-      <Benefits />
+      <Benefits setSelectedPage={setSelectedPage} selectedPage={selectedPage} />
     </div>
   );
 }
