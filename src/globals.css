@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+}
+
+.page {
+  @apply flex min-h-screen flex-col items-center justify-center text-gray-300;
+}
+
+.desc {
+  @apply mt-4 pl-28 pr-28 text-center text-sm;
+}
+
+button {
+  @apply rounded-full border-[1px] border-violet-500 p-2 text-violet-600  transition-all duration-200 ease-in-out;
+}
+
+.close {
+  @apply mr-4 mt-3 border-0 text-violet-100;
+}
+
+.close:hover {
+  @apply border-0 text-violet-100;
+}
+
+button:hover {
+  @apply bg-violet-600  text-white;
+}
+
+.rule {
+  @apply mt-1 h-[1px] w-[150px] bg-red-300 text-white;
+}
+
+h1 {
+  @apply text-4xl font-bold uppercase text-violet-500;
+}
