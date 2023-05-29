@@ -80,7 +80,7 @@ const Navbar = ({ isTopofPage, selectedPage, setSelectedPage }: Props) => {
 
       {/* mobile nav */}
       {!isAboveMediumScreens && MenuToggle && (
-        <div className="fixed bottom-0 right-0 z-40 h-full w-full bg-gray-50 drop-shadow-xl">
+        <div className="fixed bottom-0 right-0 z-40 h-full w-[60%] bg-gray-50 drop-shadow-xl">
           <div className="flex justify-end">
             <button
               className="close"
