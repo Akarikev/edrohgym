@@ -13,7 +13,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Home = ({ setSeletedPage }: Props) => {
+const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
     <section
@@ -23,7 +23,7 @@ const Home = ({ setSeletedPage }: Props) => {
     >
       {/* image and main header */}
       <motion.div
-        onViewportEnter={() => setSeletedPage(SelectedPage.Home)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
       >
         {/* main header*/}
