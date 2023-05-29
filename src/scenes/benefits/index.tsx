@@ -82,8 +82,22 @@ const Benefits = ({ setSelectedPage }: Props) => {
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex ">
           {/* Graphic */}
 
-          <img className="mx-auto" src={BenefitPageGraphic} alt="img graphic" />
-
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <img
+              className="mx-auto"
+              src={BenefitPageGraphic}
+              alt="img graphic"
+            />
+          </motion.div>
           {/* descp */}
           <div>
             {/* title */}
